@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Futura-Medium;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red140\green211\blue254;\red0\green0\blue0;
+\red202\green202\blue202;\red167\green197\blue152;\red183\green111\blue179;\red22\green174\blue174;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c61176\c86275\c99608;\csgray\c0\c0;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c70980\c80784\c65882;\cssrgb\c77255\c52549\c75294;\cssrgb\c0\c72941\c73725;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww10580\viewh7680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Debo realizar los proyectos y entregarlos en un repositorio git.\
+Las evaluaciones las realizan los alumnos.\
+Debo establecer mi disponibilidad como corrector.\
+Comandos de iTerm:
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f0 \cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}pwd : mostrar directorio en el que me ubico\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}ls : listar contenidos del directorio\
+{\listtext	\uc0\u8226 	}ls -la : lista detallada\
+{\listtext	\uc0\u8226 	}cd :  entrar en un directorio\
+{\listtext	\uc0\u8226 	}man : manual de cualquier	comando\
+{\listtext	\uc0\u8226 	}clear : limpiar la ventana de commands\
+{\listtext	\uc0\u8226 	}mkdir : crear carpeta\
+{\listtext	\uc0\u8226 	}mkrm : eliminar carpeta\
+{\listtext	\uc0\u8226 	}rm -rf : eliminar carpeta con contenidos\
+{\listtext	\uc0\u8226 	}git add : a\'f1adir archivos al git\
+{\listtext	\uc0\u8226 	}git status : ver estado y contenidos de git\
+{\listtext	\uc0\u8226 	}git commit -m : lanzar el cambio en el git y e -m para poner un mensaje descriptivo del cambio\
+{\listtext	\uc0\u8226 	}git push : lanzas / guards el commit\
+{\listtext	\uc0\u8226 	}chmod : cambiar propiedades del archivo/bin/sh : entrar al shell\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+COMPILAR:\
+gcc -Wall -Wextra -Werror ft_putchar.c main.c\
+\
+1324\
+\
+132\
+324\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+i\cf5  = \cf6 0\cf5 ; \
+    \cf7 while\cf5  (\cf3 i\cf5  < \cf3 size\cf5  - \cf6 1\cf5 ) // Recorrer todo el array hasta antes del ultimo \
+    \{\
+        \cf3 k\cf5  = \cf3 i\cf5 ; // variable que guardara la posici\'f3n actual\
+        \cf3 j\cf5  = \cf3 i\cf5  + \cf6 1\cf5 ; // variable que guarda la posici\'f3n siguiente\
+        \cf7 while\cf5  (\cf3 j\cf5  < \cf3 size\cf5 ) // Recorrer desde la posici\'f3n hasta el ultimo\
+        \{\
+            \cf7 if\cf5  (\cf3 tab\cf5 [\cf3 j\cf5 ] < \cf3 tab\cf5 [\cf3 k\cf5 ]) // si el siguiente al actual es menor\
+                \cf3 k\cf5  = \cf3 j\cf5 ; // guardamos ese menor en la posici\'f3n actual\
+            \cf3 j\cf5 ++; // hara esto hasta recorrer todo el array y habra encontrado el menor\
+        \}\
+        \cf7 if\cf5  (\cf3 k\cf5  != \cf3 i\cf5 ) // Si se cambiaron poisones entonces cambiamos los valores\
+        \{\
+            \cf3 aux_value\cf5  = \cf3 tab\cf5 [\cf3 i\cf5 ];\
+            \cf3 tab\cf5 [\cf3 i\cf5 ] = \cf3 tab\cf5 [\cf3 k\cf5 ];\
+            \cf3 tab\cf5 [\cf3 k\cf5 ] = \cf3 aux_value\cf5 ;\
+        \}\
+        \cf3 i\cf5  ++;\
+    \}\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs33\fsmilli16800 \cf8 bquilumb@student.42madrid.com\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 1121 4\
+2442 1\
+3433 2\
+2121 3\
+4134 1\
+1311 4\
+2111 4\
+3424 1\
+1331 2\
+4222 3\
+4242 1\
+2131 4\
+2224 3\
+3333 2\
+4242 1\
+3313 2\
+2442 3\
+1431 4\
+1333 3\
+2424 3\
+3131 4\
+4242 1\
+2424 3\
+3131 4\
+4242 1\
+1312 2\
+3111 4\
+4242 1\
+1213 3\
+2222 3\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 1 -> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9$\
+2 -> 01, 02, 03, \'85, 09, 12, 13, 14, \'85, 19, 23, 24, \'85, 29, 34, \'85, 89$\
+3 -> 012, \'85, 789$\
+4 -> 0123, \'85, 6789$\
+5 -> 01234, \'85, 56789$\
+\'85\
+9 .> 012345678, \'85, 123456789\
+\
+Strlcat\
+\
+Concatena en dest lo de src\
+Retorna el tama\'f1o de lo que intentamos crear\
+Su n es el tama\'f1o m\'e1ximo de que queremos crear -1 (por el \'91\\o\'92)\
+Y si n es menor al tama\'f1o de src se muestra solo la n, no el tama\'f1o de src.}
